@@ -12,29 +12,63 @@
       <img src="assets/wave-logo.svg" alt="Logo WAVE">
       <nav class="main-nav" arial-label="Navigation principale">
         <ul>
-          <li><a href="#">Concerts</a></li>
-          <li><a href="#">Artistes</a></li>
-          <li><a href="#">Villes</a></li>
+          <li><a href="#concerts">Concerts</a></li>
+          <li><a href="#artistes">Artistes</a></li>
+          <li><a href="#villes">Villes</a></li>
         </ul>
         <button class="creation-compte" 
           type="button">Créer un compte</button>
       </nav>
   </header>
+
   <main>
     <section class="hero">
       <div class="lieu">
-        <p>LILLE - CETTE SEMAINE</p>
+        <p>Lille - cette semaine</p>
       </div>
-      <h1 class="titre-hero">LE PROCHAIN SON QUI VA TE FAIRE VIBRER</h1>
+      <h2 class="titre-hero">le prochain son qui va te faire vibrer</h2>
       <p class="description-hero">Des petites salles aux grandes scènes, découvre les artistes qui jouent près de chez toi</p>
-      <button class="voir concerts" type="button">Voir les concerts</button>
-      <figure>
-        <img src="assets/concert-hero.png" width="460x">
-        <figcaption>
-          <p class="categorie">À NE PAS MANQUER</p>
-          <p class="evenement">Pulse Night - 21 septembre</p>
-        </figcaption>
+      <button class="voir concerts" type="button">Voir les concerts<span aria-hidden="true">↘</span></a></button>
+      <figure class="hero-visuel">
+        <img src="assets/concert-hero.png">
+        <figcaption><span>à ne pas manquer</span><strong>Pulse Night - 21 septembre</strong></figcaption>
       </figure>
+    </section>
+
+    <section class="evenements-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="en-tete">à l'affiche</p>
+          <h2>cette semaine à lille</h2>
+          <a href="#concerts-liste">Tous les concerts<span aria-hidden="true">→</span></a>
+        </div>
+        <article class="article-1">
+          <img src="assets/lina-k.png"><span>électro</span>
+          <div class="evenement-info">
+            <time datetime="2026-09-19"><strong>19</strong><span>SEP</span></time>
+            <div><h3>LINA K</h3><p>Le Flow - 20:30</p></div>
+            <a href="#info"><span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="article-2">
+          <img src="assets/noa-v.png"><span>Rap alternatif</span>
+          <div class="evenement-info">
+            <time datetime="2026-09-22"><strong>22</strong><span>SEP</span></time>
+            <div><h3>NOA V</h3><p>L'Aéronef - 21:00</p></div>
+            <a href="#info"><span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="article-3">
+          <div class="poster-contenu"><p class="poster-label">Open Air</p><p class="poster-nom">NORTH<br>WAVES</p><p class="poster-lieu">Gare Saint-Sauveur</p></div>
+          <div class="evenement-info">
+            <time datetime="2026-09-27"><strong>27</strong><span>SEP</span></time>
+            <div><h3>North Waves</h3><p>6 artistes - Dès 18:00</p></div>
+            <a href="#poster-info"><span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
     </section>
 
   </main>
